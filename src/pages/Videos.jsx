@@ -4,14 +4,13 @@ import { Reveal } from '../components/Reveal';
 import { supabase } from '../lib/supabaseClient';
 
 const SEED_VIDEOS = [
-  { title: 'Lyec Pa Lobo — Official Video', artist: 'Okello Brothers', thumb: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Official Video' },
-  { title: 'Bwola Nights — Live Session', artist: 'Acholi Cultural Troupe', thumb: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Live Session' },
-  { title: 'Gulu Sunrise — Single', artist: 'Lapenno', thumb: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Official Video' },
-  { title: 'Adungu Sessions Vol. 1', artist: 'Various Artists', thumb: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Studio Session' },
-  { title: 'Homecoming — Anthem', artist: 'Kilama & The Roots', thumb: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Official Video' },
-  { title: 'Larakaraka Wedding Songs', artist: 'Gulu Youth Choir', thumb: 'https://images.unsplash.com/photo-1524337409051-8dab577a4b8b?q=80&w=900&auto=format&fit=crop', youtube_id: 'dQw4w9WgXcQ', category: 'Documentary' },
+  { title: 'Lyec Pa Lobo — Official Video', artist: 'Okello Brothers', thumb: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=900&auto=format&fit=crop', youtube_id: 'x7NW41ZpG1w', category: 'Official Video' },
+  { title: 'Bwola Nights — Live Session', artist: 'Acholi Cultural Troupe', thumb: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=900&auto=format&fit=crop', youtube_id: 'Hky2-CIKWJw', category: 'Live Session' },
+  { title: 'Gulu Sunrise — Single', artist: 'Lapenno', thumb: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=900&auto=format&fit=crop', youtube_id: 'x7NW41ZpG1w', category: 'Official Video' },
+  { title: 'Adungu Sessions Vol. 1', artist: 'Various Artists', thumb: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=900&auto=format&fit=crop', youtube_id: 'Hky2-CIKWJw', category: 'Studio Session' },
+  { title: 'Homecoming — Anthem', artist: 'Kilama & The Roots', thumb: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900&auto=format&fit=crop', youtube_id: 'x7NW41ZpG1w', category: 'Official Video' },
+  { title: 'Larakaraka Wedding Songs', artist: 'Gulu Youth Choir', thumb: 'https://images.unsplash.com/photo-1524337409051-8dab577a4b8b?q=80&w=900&auto=format&fit=crop', youtube_id: 'Hky2-CIKWJw', category: 'Documentary' },
 ];
-
 export default function Videos() {
   const [videos, setVideos] = useState(SEED_VIDEOS);
   const [active, setActive] = useState(null);
