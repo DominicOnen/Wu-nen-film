@@ -1,0 +1,6 @@
+name = "wu-nen-film"
+compatibility_date = "2026-08-30"
+
+[vars]
+VITE_SUPABASE_URL = "https://llrsyhcbtkdxnrpnjbid.supabase.co"
+VITE_SUPABASE_ANON_KEY = "sb_publishable_FBQ-2A0ypIILhIcXtGg9AA_14uc2o"
